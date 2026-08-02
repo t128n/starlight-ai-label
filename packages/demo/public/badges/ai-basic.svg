@@ -1,7 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="28" viewBox="0 0 54 28" role="img" aria-label="AI">
   <rect width="54" height="28" rx="14" fill="#111827"/>
-  <svg x="10" y="7" width="14" height="14" viewBox="0 0 24 24">
-    <path fill="#fff" d="M12 2c.4 3.6 1 5.6 2 7.5S16.9 12.6 20 13c-3.1.4-5.9 1.6-7 2.5S12 20.6 12 22c-.4-3.6-1-5.6-2-7.5S6.1 12.4 3 12c3.1-.4 5.9-1.6 7-2.5S12 3.4 12 2z"/>
+  <svg x="10" y="6.75" width="14" height="14" viewBox="0 0 24 24">
+    <path
+      fill="none"
+      stroke="#fff"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+    />
   </svg>
-  <text x="30" y="15" fill="#fff" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" dominant-baseline="central" text-anchor="start">AI</text>
+  <text x="30" y="13.5" fill="#fff" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" dominant-baseline="central" text-anchor="start">AI</text>
 </svg>

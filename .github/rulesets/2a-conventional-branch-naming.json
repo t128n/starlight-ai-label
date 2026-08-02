@@ -1,0 +1,28 @@
+{
+  "name": "Conventional Branch Naming",
+  "target": "branch",
+  "source_type": "Repository",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {
+    "ref_name": {
+      "include": ["~ALL"],
+      "exclude": [
+        "refs/heads/main",
+        "refs/heads/master",
+        "refs/heads/develop"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "branch_name_pattern",
+      "parameters": {
+        "name": "Conventional Branch",
+        "negate": false,
+        "operator": "regex",
+        "pattern": "^(feature|feat|bugfix|fix|hotfix|release|chore|ai|claude|codex|copilot|cursor)/[a-z0-9]+(\\.[a-z0-9]+)*(-[a-z0-9]+(\\.[a-z0-9]+)*)*$"
+      }
+    }
+  ]
+}
