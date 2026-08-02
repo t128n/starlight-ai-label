@@ -1,5 +1,14 @@
 # starlight-ai-label
 
+<details>
+<summary><a href="https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence"><img src="https://t128n.github.io/starlight-ai-label/badges/ai-generated.svg" alt="AI Generated" /></a></summary>
+
+Claude Sonnet 5 (reasoning effort: high) generated this package. Read about the
+[EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence)
+to learn more.
+
+</details>
+
 This repository is a pnpm workspace with two packages:
 
 - [`packages/starlight-ai-label`](packages/starlight-ai-label) — the Starlight plugin. See the
