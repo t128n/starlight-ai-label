@@ -1,0 +1,51 @@
+name: "\U0001F41B Bug Report"
+description: Report an issue or possible bug with starlight-ai-label
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the bug report. Fill in all fields in this form.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Version of `starlight-ai-label`
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: starlight-version
+    attributes:
+      label: Version of `@astrojs/starlight`
+      placeholder: 0.32.0
+    validations:
+      required: true
+  - type: input
+    id: package-manager
+    attributes:
+      label: Package manager
+      placeholder: npm, yarn, pnpm
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description of the bug
+      description: State what happened. Then state what you expected to happen instead.
+    validations:
+      required: true
+  - type: input
+    id: bug-reproduction
+    attributes:
+      label: Link to a minimal reproduction
+      description: Give a link to a repository, or to a StackBlitz or CodeSandbox project, that shows the problem. A minimal reproduction helps other people fix the problem faster.
+      placeholder: 'https://github.com/your-username/repro'
+    validations:
+      required: false
+  - type: checkboxes
+    id: will-pr
+    attributes:
+      label: Participation
+      options:
+        - label: I can open a pull request for this issue.
+          required: false

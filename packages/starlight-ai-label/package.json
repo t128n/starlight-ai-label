@@ -1,0 +1,52 @@
+{
+  "name": "starlight-ai-label",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Starlight plugin to add EU AI Act-style AI content-disclosure badges to your docs pages.",
+  "author": "t128n",
+  "type": "module",
+  "homepage": "https://github.com/t128n/starlight-ai-label",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t128n/starlight-ai-label.git",
+    "directory": "packages/starlight-ai-label"
+  },
+  "bugs": "https://github.com/t128n/starlight-ai-label/issues",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "files": [
+    "components",
+    "overrides",
+    "index.ts",
+    "schema.ts"
+  ],
+  "keywords": [
+    "starlight",
+    "starlight-plugin",
+    "withastro",
+    "astro",
+    "ai",
+    "eu-ai-act",
+    "ai-disclosure"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./components/AiLabelBadge.astro": "./components/AiLabelBadge.astro",
+    "./overrides/PageTitle.astro": "./overrides/PageTitle.astro",
+    "./schema": "./schema.ts",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.32.0",
+    "astro": ">=5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "astro": "^7.1.6",
+    "vitest": "^4.1.10"
+  }
+}

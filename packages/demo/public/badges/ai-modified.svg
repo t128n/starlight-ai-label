@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="28" viewBox="0 0 113 28" role="img" aria-label="AI Modified">
+  <rect width="113" height="28" rx="14" fill="#111827"/>
+  <svg x="10" y="7" width="14" height="14" viewBox="0 0 24 24">
+    <path fill="#fff" d="M12 2c.4 3.6 1 5.6 2 7.5S16.9 12.6 20 13c-3.1.4-5.9 1.6-7 2.5S12 20.6 12 22c-.4-3.6-1-5.6-2-7.5S6.1 12.4 3 12c3.1-.4 5.9-1.6 7-2.5S12 3.4 12 2z"/>
+  </svg>
+  <text x="30" y="15" fill="#fff" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" dominant-baseline="central" text-anchor="start">AI Modified</text>
+</svg>

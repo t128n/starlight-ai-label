@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions: {}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      # npm's trusted publishing (OIDC) needs npm CLI 11.5.1+, which Node 22 does not bundle
+      # by default. Node 24 does.
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # On every push to main, this either:
+      # - opens or updates a "Version Packages" PR when there are unreleased changesets, or
+      # - publishes to npm when that PR has just been merged.
+      #
+      # Publishing uses npm's trusted publishing (OIDC), not a long-lived token: the empty
+      # NPM_TOKEN is intentional. See CONTRIBUTING.md for the one-time setup this needs on
+      # npmjs.com, and for the manual first publish that must happen before it.
+      - name: Create Release Pull Request or Publish
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version
+          publish: pnpm run release
+          commit: 'chore: release'
+          title: 'chore: release'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ''

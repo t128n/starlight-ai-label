@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "starlight-ai-label-demo",
+      "runtimeExecutable": "P:\\Dev\\starlight-ai-label\\.claude\\run-demo.cmd",
+      "runtimeArgs": [],
+      "port": 4321
+    }
+  ]
+}

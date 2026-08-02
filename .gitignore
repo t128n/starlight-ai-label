@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.log
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

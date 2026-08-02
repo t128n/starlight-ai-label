@@ -1,0 +1,32 @@
+name: "\U0001F4A1 Feature Request"
+description: Suggest an improvement or a new feature for starlight-ai-label
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the use case or the limit that you have.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What do you want to happen?
+      description: Describe the feature or the change that you want.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Describe other solutions or workarounds that you tried.
+    validations:
+      required: false
+  - type: checkboxes
+    id: will-pr
+    attributes:
+      label: Participation
+      options:
+        - label: I can open a pull request for this feature.
+          required: false
