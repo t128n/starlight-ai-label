@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       # npm's trusted publishing (OIDC) needs npm CLI 11.5.1+, which Node 22 does not bundle
       # by default. Node 24 does.
