@@ -2,6 +2,7 @@
   "name": "starlight-ai-label-workspace",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@11.18.0",
   "scripts": {
     "dev": "pnpm --filter demo dev",
     "build": "pnpm --filter demo build",
