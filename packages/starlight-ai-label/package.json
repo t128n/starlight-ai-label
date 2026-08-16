@@ -46,7 +46,7 @@
   },
   "sideEffects": false,
   "devDependencies": {
-    "astro": "^7.1.6",
+    "astro": "^7.2.1",
     "vitest": "^4.1.10"
   }
 }
