@@ -9,14 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^7.0.5",
-    "@astrojs/starlight": "^0.41.6",
-    "astro": "^7.1.6",
+    "@astrojs/mdx": "^7.0.7",
+    "@astrojs/starlight": "^0.41.7",
+    "astro": "^7.2.4",
     "sharp": "^0.35.3",
     "starlight-ai-label": "workspace:*"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   }
 }
